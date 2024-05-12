@@ -5368,6 +5368,7 @@ GameObject:
   - component: {fileID: 6210372904631112863}
   - component: {fileID: 6210372904631112862}
   - component: {fileID: 6552390636700116449}
+  - component: {fileID: -4559215808848450289}
   m_Layer: 0
   m_Name: skel
   m_TagString: Untagged
@@ -5437,6 +5438,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.58, z: 1}
   m_Center: {x: 0, y: 1.12, z: 0}
+--- !u!114 &-4559215808848450289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6552390636700116450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dca12c808052134ab7d12a64e8a4def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6648889361794982790
 GameObject:
   m_ObjectHideFlags: 0

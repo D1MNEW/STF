@@ -476,6 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4620468375997021233}
   - component: {fileID: 5428213235139094154}
+  - component: {fileID: -6750075286030153439}
   m_Layer: 0
   m_Name: chel
   m_TagString: Untagged
@@ -513,7 +514,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -521,6 +522,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &-6750075286030153439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5428213235139094155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e188a174170fed48ae26b759e42cc58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 100
+  Animator: {fileID: 0}
 --- !u!1 &5593575077398406421
 GameObject:
   m_ObjectHideFlags: 0
