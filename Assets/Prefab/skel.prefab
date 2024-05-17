@@ -2335,6 +2335,53 @@ Transform:
   m_Father: {fileID: 8549920040918661959}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2667303592974574644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2306560020640708288}
+  - component: {fileID: 6930427965663372436}
+  m_Layer: 0
+  m_Name: CtrelaSourceTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2306560020640708288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667303592974574644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.017, y: 1.331, z: 0.604}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5883130744492752728}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6930427965663372436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2667303592974574644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d91890ef4d1eb4ea69fcc1f34da686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 10
+  CtrelaPrefab: {fileID: 1968765497627395974, guid: 8707775caf2029e479ee2413c52a3a22,
+    type: 3}
+  CtrelaSourceTransform: {fileID: 2306560020640708288}
 --- !u!1 &2796378462310333302
 GameObject:
   m_ObjectHideFlags: 0
@@ -5389,6 +5436,7 @@ Transform:
   m_Children:
   - {fileID: 8685115090364054924}
   - {fileID: 3154982695951293039}
+  - {fileID: 2306560020640708288}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5436,7 +5484,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.58, z: 1}
+  m_Size: {x: 0.92, y: 1.58, z: 0.36}
   m_Center: {x: 0, y: 1.12, z: 0}
 --- !u!114 &-4559215808848450289
 MonoBehaviour:
@@ -5450,6 +5498,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dca12c808052134ab7d12a64e8a4def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 100
+  ValueRectTransform: {fileID: 0}
+  Animator: {fileID: 0}
+  GameplayUI: {fileID: 0}
+  GameOverScreen: {fileID: 0}
 --- !u!1 &6648889361794982790
 GameObject:
   m_ObjectHideFlags: 0

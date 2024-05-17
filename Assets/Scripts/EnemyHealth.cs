@@ -21,5 +21,7 @@ public class EnemyHealth : MonoBehaviour
     {;
         GetComponent<NavMeshAgent>().enabled = false;
         GetComponent<CapsuleCollider>().enabled = false;
+
+        Destroy(gameObject);
     }
 }
