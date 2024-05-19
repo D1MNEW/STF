@@ -29,12 +29,12 @@ public class SkelHealth : MonoBehaviour
     public void DealDamage(float damage)
     {
         Value -= damage;
-        //if (Value <= 0)
-        //{
-        //    PlayerIsDead();
-        //}
+        if (Value <= 0)
+        {
+            
+        }
 
-        //DrawHeathlBar();
+        DrawHeathlBar();
     }
 
     //private void PlayerIsDead()
