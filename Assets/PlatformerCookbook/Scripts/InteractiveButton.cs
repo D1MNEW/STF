@@ -184,13 +184,13 @@ public class InteractiveButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.gameObject.GetComponent<PlatformerCharacterController>()) return;
+        if (!other.gameObject.GetComponent<Mover>()) return;
         _playerIsNearby = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (!other.gameObject.GetComponent<PlatformerCharacterController>()) return;
+        if (!other.gameObject.GetComponent<Mover>()) return;
         _playerIsNearby = false;
     }
     
