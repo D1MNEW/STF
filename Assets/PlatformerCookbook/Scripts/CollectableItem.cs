@@ -8,7 +8,7 @@ public class CollectableItem : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        var controller = other.GetComponent<PlatformerCharacterController>();
+        var controller = other.GetComponent<Mover>();
         if (!controller) return;
 
         action.Invoke();

@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void GameStartButton()
     {
-        SceneManager.LoadScene("—цена с квестами(2)");
+        SceneManager.LoadScene(1);
     }
 
     public void GameExitButton()
