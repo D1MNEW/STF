@@ -1,15 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SkelHealth : MonoBehaviour
 {
     public float Value = 100;
     public RectTransform ValueRectTransform;
     public Animator Animator;
+    public Mover Mover;
 
     public GameObject GameplayUI;
     public GameObject GameOverScreen;
+
+
 
     private float _maxValue;
 
@@ -31,7 +35,7 @@ public class SkelHealth : MonoBehaviour
         Value -= damage;
         if (Value <= 0)
         {
-            
+            Death();
         }
 
         DrawHeathlBar();
@@ -50,5 +54,18 @@ public class SkelHealth : MonoBehaviour
     private void DrawHeathlBar()
     {
         ValueRectTransform.anchorMax = new Vector2(Value / _maxValue, 1);
+    }
+
+    private void Death()
+    {
+        GameplayUI.SetActive(false);
+        GameOverScreen.SetActive(true);
+        GetComponent<Mover>().enabled = false;
+        GetComponent<CtrelaCaster>().enabled = false;
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

@@ -11,9 +11,9 @@ public class NLVL : MonoBehaviour
         }
 
         // Update is called once per frame
-        void Update()
+        public void Conec()
     {
-
+        SceneManager.LoadScene(3);
     }
         
     
